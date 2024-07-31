@@ -23,7 +23,7 @@ def send_email(to_address, subject, message):
     except Exception as e:
         print(f"Failed to send email to {to_address}: {e}")
 
-# Process each homework submission
+
 homework_submissions = data['sheet1']
 for submission in homework_submissions:
     name = submission.get('name')

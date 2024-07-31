@@ -1,4 +1,4 @@
-#Automated Assignment Checker In Python
+# Automated Assignment Checker In Python
 This Python Script Checks The Spreadsheet With The Help Of Sheety API If Student Is Passing
 Or Failing Or They Havent Submitted The Assignment, Then Email Them Based On The Situation
 

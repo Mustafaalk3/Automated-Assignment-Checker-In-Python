@@ -5,8 +5,8 @@ import smtplib
 SHEETY_API_URL = 'https://api.sheety.co/ec1fa9b9e4254e67050e9bdb5e5d6fe1/advancePythonAssignment/sheet1'
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
-GMAIL_USER = "www.alkmustafa05@gmail.com"
-GMAIL_PASSWORD = "vckv uxku lllu lkha"
+GMAIL_USER = "YOUR-EMAIL"
+GMAIL_PASSWORD = "YOUR-PASSWORD"
 
 
 response = requests.get(SHEETY_API_URL)
@@ -23,9 +23,9 @@ def send_email(to_address, subject, message):
     except Exception as e:
         print(f"Failed to send email to {to_address}: {e}")
 
-
-homework_submissions = data['sheet1']
-for submission in homework_submissions:
+# Process each assignment submission
+assignment_submissions = data['sheet1']
+for submission in assignment_submissions:
     name = submission.get('name')
     email = submission.get('email')
     assignment_title = submission.get('assignmentTitle')
